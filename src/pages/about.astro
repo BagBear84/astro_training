@@ -9,6 +9,10 @@ const identity = {
 };
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 <a href="/">Home</a>
@@ -27,6 +31,12 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<style>
+			h1 {
+			  color: purple;
+			  font-size: 4rem;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>{pageTitle}</h1>
@@ -54,7 +64,11 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 				{skills.map((skill)=> <li>{skill}</li>)}	
 			</ul>	
 		</div>
-		
+		<div>
+			{happy && <p>i am happy</p>}
+			{finished && <p>its finished</p>}
+			{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+		</div>
 	</body>
 	
 </html>
