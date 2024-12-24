@@ -1,7 +1,6 @@
-<!-- <a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">blog</a> -->
-
+---
+const blogTitle = 'My Astro Learning Blog'
+---
 
 <!doctype html>
 <html lang="en">
@@ -11,13 +10,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>this is the blog |      :  --     ]</title>
+		<title>{blogTitle} |      :  --     ]</title>
 	</head>
 	<body>
 		<a href="/">Home</a>
 		<a href="/about/">About</a>
 		<a href="/blog/">blog</a>
-		<h1>:  --     ]</h1>
+		<h1>{blogTitle}</h1>
 
 		<ul>
 			<li><a href="/posts/post-1/">Post 1</a></li>
