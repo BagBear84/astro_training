@@ -1,7 +1,9 @@
 ---
+import Navigation from '../components/Navigation.astro'
 import '../styles/global.css'
 const blogTitle = 'My Astro Learning Blog'
 ---
+<Navigation/>
 
 <!doctype html>
 <html lang="en">
@@ -14,9 +16,6 @@ const blogTitle = 'My Astro Learning Blog'
 		<title>{blogTitle} |      :  --     ]</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">blog</a>
 		<h1>{blogTitle}</h1>
 
 		<ul>
